@@ -1,7 +1,5 @@
 # Live Whiteboard (Spring Boot + Postgres)
 
-**Repository:** https://github.com/yourusername/live-whiteboard (placeholder — push this project there)
-
 ## Overview
 
 - Real-time collaborative whiteboard using Spring Boot WebSocket (STOMP) and a simple frontend.
