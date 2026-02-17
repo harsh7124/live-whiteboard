@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Live Whiteboard</title>
+    <style>
+      body, html { height: 100%; margin: 0; }
+      #toolbar { height: 48px; background: #f2f2f2; display:flex; align-items:center; padding:8px; }
+      #canvas { border:1px solid #ccc; display:block; }
+    </style>
+  </head>
+  <body>
+    <div id="toolbar">
+      <label>Board ID:</label>
+      <input id="boardId" value="1" style="width:80px; margin:0 8px" />
+      <button id="connect">Connect</button>
+      <button id="clear">Clear Local</button>
+    </div>
+    <canvas id="canvas" width="1200" height="700"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+  </html>

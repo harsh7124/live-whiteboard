@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: ${JDBC_DATABASE_URL:jdbc:postgresql://localhost:5432/whiteboard}
+    username: ${JDBC_DATABASE_USERNAME:postgres}
+    password: ${JDBC_DATABASE_PASSWORD:postgres}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+server:
+  port: ${PORT:8080}
+
+ai:
+  cursor:
+    url: ${AI_CURSOR_URL:https://api.cursor.example}
+    key: ${AI_CURSOR_KEY:}
